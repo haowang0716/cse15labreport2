@@ -1,37 +1,55 @@
-## Welcome to GitHub Pages
+# CSE15L Lab Report Week4
+## First Code Changes
+**Code Changes**
+![firstchange](1Change.png)
 
-You can use the [editor on GitHub](https://github.com/haowang0716/cse15labreport2/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+**Link to the Github page**
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[link on github](https://github.com/haowang0716/markdown-parse/commit/f71a682551939396ecd1a6743f6049f601c86daf)
 
-### Markdown
+**Symptom**
+![1Before](1Before.png)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+**After Debugging**
+![1After](1After.png)
 
-```markdown
-Syntax highlighted code block
+In the lab, we tried to make one of the test files invalid and see the output. At first, the program will print the same number(-1) infinitely. We realized that since there is not an if statement to exit the while loop, the program will print the wrong index infinitely. So we add an if statement to break out of the loop immediately. But this code is still problematic and you will see the further change we made in "Third Code Change".  
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+## Second Code Changes
 
-**Bold** and _Italic_ and `Code` text
+**Code Changes**
+![secondchange](2Change.png)
 
-[Link](url) and ![Image](src)
-```
+**Link to the Github page**
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+[link on github](https://github.com/haowang0716/markdown-parse/commit/e681117f442080a60ef531a4cfcdae0b4e0755c1)
 
-### Jekyll Themes
+**Symptom**
+![fail](2Before.png)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/haowang0716/cse15labreport2/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+**After Debugging**
+![success](2After.png)
 
-### Support or Contact
+When I wrote two JUnit(and another incomplete one)tests to check the output of the program with the first and the third test file, it will show six errors. After dicsussion with the tutor and the groups, we realized that we should also import the packages so it will run successfully. After adding the packages, I got three OK tests. 
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+## Third Code Changes
+**Code Changes**
+![thirdchange](3Change.png)
+**Link to the Github page**
+
+[link on github](https://github.com/haowang0716/markdown-parse/commit/e681117f442080a60ef531a4cfcdae0b4e0755c1?diff=split)
+
+**Symptom**
+![symptom3](3Before.png)
+
+**After Debugging**
+![after](3After.png)
+
+We realized that when the name of the link is invalid, it should not still print the link. After debugging, we realized that we should not break out of the for loop, which leads to the program to print the link, so we let the program throw an expection when it encounters the invalid link name. 
+
+
+
+
